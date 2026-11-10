@@ -1,12 +1,179 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
-
-</body>
-</html>
+/* Sharif Biryani Corner - shared website theme */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #4b2b12;
+  background-color: #fff9e6;
+  line-height: 1.6;
+}
+.container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+.site-header {
+  background-color: #ffa500;
+  color: #5a2d00;
+  text-align: center;
+  padding: 24px 0 16px;
+  border-bottom: 6px solid #ffff00;
+}
+.site-header h1 {
+  color: #ffff00;
+  margin: 0;
+  font-size: 2rem;
+  text-shadow: 1px 1px 2px #8a4b00;
+}
+.tagline {
+  margin: 4px 0 18px;
+  font-weight: bold;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+nav a {
+  color: #5a2d00;
+  background-color: #ffff00;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 9px 18px;
+  border-radius: 6px;
+}
+nav a:hover, nav a.active {
+  background-color: #fff4bf;
+  outline: 2px solid #b85c00;
+}
+main {
+  padding-top: 28px;
+  padding-bottom: 36px;
+}
+h2 {
+  color: #d66a00;
+}
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  align-items: center;
+  background: #fff0bd;
+  padding: 24px;
+  border: 2px solid #ffa500;
+  border-radius: 12px;
+}
+.hero h2 {
+  color: #c45b00;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+.eyebrow {
+  color: #a64d00;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.hero-image {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  border: 5px solid #ffff00;
+  border-radius: 10px;
+}
+.button-link, button {
+  display: inline-block;
+  border: 0;
+  border-radius: 6px;
+  background: #ffa500;
+  color: #4b2b12;
+  padding: 11px 20px;
+  font: bold 1rem Arial, sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+}
+.button-link:hover, button:hover {
+  background: #ffff00;
+}
+.welcome-section, .page-section, .center-section {
+  margin-top: 30px;
+}
+.info-grid, .food-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+.info-card, .food-card, .content-card {
+  background: #fff;
+  border: 2px solid #ffd166;
+  border-radius: 10px;
+  padding: 18px;
+}
+.info-card h3, .food-card h3 {
+  color: #c45b00;
+  margin-top: 0;
+}
+.center-section {
+  text-align: center;
+  background: #fff0bd;
+  padding: 24px;
+  border-radius: 10px;
+}
+.page-intro {
+  text-align: center;
+  margin-bottom: 24px;
+}
+.food-card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 7px;
+  border: 3px solid #ffa500;
+}
+.food-card p {
+  margin-bottom: 0;
+}
+.menu-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  margin: 20px 0;
+}
+.menu-table th, .menu-table td {
+  border: 1px solid #e5a23b;
+  text-align: left;
+  padding: 13px;
+}
+.menu-table th {
+  background: #ffa500;
+  color: #4b2b12;
+}
+.menu-table tr:nth-child(even) {
+  background: #fff0bd;
+}
+.contact-details {
+  max-width: 650px;
+  margin: 0 auto;
+}
+.contact-details p {
+  padding: 10px 14px;
+  background: #fff0bd;
+  border-left: 5px solid #ffa500;
+}
+footer {
+  background: #ffa500;
+  color: #4b2b12;
+  text-align: center;
+  padding: 15px;
+  border-top: 5px solid #ffff00;
+}
+footer p {
+  margin: 0;
+}
+@media (max-width: 700px) {
+  .hero { grid-template-columns: 1fr; }
+  .info-grid, .food-grid { grid-template-columns: 1fr; }
+  .site-header h1 { font-size: 1.6rem; }
+  .menu-table th, .menu-table td { padding: 9px; }
+}

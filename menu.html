@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sharif Biryani Corner | Menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>SHARIF BIRYANI CORNER</h1>
+      <p class="tagline">Fresh, flavourful biryani made with love!</p>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a class="active" href="menu.html">Menu</a>
+        <a href="gallery.html">Gallery</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <section class="page-intro">
+      <h2>Our Menu</h2>
+      <p>Choose your favourite meal from Sharif Biryani Corner.</p>
+    </section>
+    <section class="content-card">
+      <table class="menu-table">
+        <tr><th>Item</th><th>Price</th></tr>
+        <tr><td>Biryani with Chicken</td><td>Rs 550 / plate</td></tr>
+        <tr><td>Biryani with Qorma</td><td>Rs 800 / plate</td></tr>
+        <tr><td>Biryani with Beef</td><td>Rs 1000 / plate</td></tr>
+        <tr><td>Chai</td><td>Rs 80 / cup</td></tr>
+        <tr><td>Water</td><td>Rs 50 / glass</td></tr>
+      </table>
+      <div class="center-section">
+        <p>Want to place an order?</p>
+        <button type="button" onclick="placeOrder()">ORDER</button>
+      </div>
+    </section>
+  </main>
+  <footer><p>&copy; 2026 Sharif Biryani Corner. All rights reserved.</p></footer>
+  <script>
+    function placeOrder() {
+      console.log("Order button was clicked.");
+      window.alert("Your order request has been received!");
+    }
+  </script>
+</body>
+</html>

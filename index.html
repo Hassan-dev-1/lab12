@@ -1,65 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-table {
-  font-family: arial;
-  width: 100%;
-}
-td, th {
-  text-align: left;
-  padding: 10px;
-  background-color: #FFA500;
-}
-h2 {
-	background-color: #FFFF00;
-}
-
-
-}
-</style>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sharif Biryani Corner | Home</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="site-header">
+    <div class="container">
+      <h1>SHARIF BIRYANI CORNER</h1>
+      <p class="tagline">Fresh, flavourful biryani made with love!</p>
+      <nav aria-label="Main navigation">
+        <a class="active" href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="gallery.html">Gallery</a>
+      </nav>
+    </div>
+  </header>
 
-<h2>SHARIF BIRYANI CORNER</h2>
-<img src="images/images.jfif" width="300">
+  <main class="container">
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">WELCOME TO OUR CORNER</p>
+        <h2>Enjoy the taste of delicious biryani!</h2>
+        <p>Visit Sharif Biryani Corner for tasty biryani, refreshing drinks and a satisfying meal.</p>
+        <a class="button-link" href="menu.html">Explore our menu</a>
+      </div>
+      <img class="hero-image" src="images/biryani.jfif" alt="A serving of chicken biryani with rice and sauces">
+    </section>
 
+    <section class="welcome-section">
+      <h2>Why choose us?</h2>
+      <div class="info-grid">
+        <article class="info-card"><h3>Fresh food</h3><p>Prepared to give you a delicious and enjoyable meal.</p></article>
+        <article class="info-card"><h3>Great taste</h3><p>Enjoy aromatic rice, tasty spices and tender chicken.</p></article>
+        <article class="info-card"><h3>Something for everyone</h3><p>Choose from chicken, qorma and beef biryani.</p></article>
+      </div>
+    </section>
+    <section class="center-section">
+      <h2>Ready to order?</h2>
+      <p>Check our menu and choose your favourite meal.</p>
+      <button type="button" onclick="showWelcome()">Say hello</button>
+    </section>
+  </main>
 
-<table>
-  <tr>
-    <th>Item</th>
-    <th>Price</th>
-  </tr>
-  <tr>
-    <td>Biryani with Chicken</td>
-    <td>Rs 550 / plate</td>
-  </tr>
-  <tr>
-    <td>Biryani with Qorma</td>
-    <td>Rs 800 / plate</td>
-  </tr>
-  <tr>
-    <td>Biryani with Beef</td>
-    <td>Rs 1000 / plate</td>
-  </tr>
-  <tr>
-    <td>Chai</td>
-    <td>Rs 80 / cup</td>
-  </tr>
-  <tr>
-    <td>Water</td>
-    <td>Rs 50 / glass</td>
-  </tr>
-</table>
-<button onclick="order()">ORDER</button>
-
-<script>
-  function order() {
-    console.log("Say ORDER was clicked");
-    window.alert("Your Order has been confirmed!");
-}
-</script>
+  <footer><p>&copy; 2026 Sharif Biryani Corner. All rights reserved.</p></footer>
+  <script>
+    function showWelcome() {
+      console.log("Welcome button was clicked.");
+      window.alert("Thank you for visiting Sharif Biryani Corner!");
+    }
+  </script>
 </body>
 </html>
-
